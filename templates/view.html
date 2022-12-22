@@ -1,0 +1,51 @@
+
+
+<!doctype html>
+<title>Simple tables</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style2.css') }}">
+
+
+<div class="container-fluid">
+<div class=row>
+
+<div class=column>
+ <h1> </h1>
+ 
+  
+    <h2></h2>
+   
+    {{df1.table|safe}}
+    </div>
+    <div class=column>
+
+     <h1> </h1>
+     
+      
+        <h2></h2>
+       
+        {{df2.table|safe}}
+
+    </div>
+</div>
+<div class=row>
+
+<div class=column>
+ <h1> </h1>
+ 
+  
+    <h2></h2>
+   
+    {{df3.table|safe}}
+    </div>
+    <div class=column>
+
+     <h1> </h1>
+     
+      
+        <h2></h2>
+       
+        {{df2.table|safe}}
+
+    </div>
+</div>
+</div>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+<title>Simple tables</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+<div class=page>
+{% for table in tables %}
+            {{titles[loop.index]}}
+            {{ table|safe }}
+{% endfor %}
+<p><a href= 'name' >url2</a></p>
+<a href='name'>url</a>
+</div>
+</html>

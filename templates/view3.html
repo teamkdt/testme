@@ -1,0 +1,27 @@
+
+<!doctype html>
+<title>Simple tables</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style3.css') }}">
+
+
+<div class="row"><!-- stretches across page -->
+    <div class="column"> <!-- 1 of 3 -->
+        <div class="card">
+            <h1>Group 1</h1>
+            <p>{{df2.table|safe}}</p>
+        </div>
+    </div>
+    
+    <div class="column"> <!-- 2 of 3 -->
+    <div class="cell medium-3">
+        <div class="card">
+        
+            <h1>Group 2</h1>
+            <p>{{df2.table|safe}}</p>
+        </div>
+        </div>
+    </div> 
+    
+      
+
+</div> <!-- end of row -->
